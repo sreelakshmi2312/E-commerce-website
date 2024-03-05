@@ -4,7 +4,7 @@ class TTextformfieldTheme{
   TTextformfieldTheme._();
 
   static InputDecorationTheme lighttextformTheme=InputDecorationTheme(
-    errorMaxLines: 3,
+    errorMaxLines: 2,
     prefixIconColor: Colors.grey,
     suffixIconColor: Colors.grey,
     labelStyle: const TextStyle().copyWith(color:Colors.black,fontSize: 14),
