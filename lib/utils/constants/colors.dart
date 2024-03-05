@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+
 class TAppcolors{
   
   TAppcolors._();
@@ -11,6 +12,18 @@ class TAppcolors{
   static const Color primary=Color(0xFF4b68ff);
   static const Color secondary=Color(0xFFFFE24B);
   static const Color accent=Color(0xFFb0c7ff);
+
+  //Gradient Color
+
+  static const Gradient lineargradient=LinearGradient(
+    begin: Alignment(0.0,0.0),
+    end:Alignment(0.707, -0.707),
+    colors:[
+      Color(0xFFFF9a9e),
+      Color(0xFFFad0c4),
+      Color(0xFFFad0c4),
+
+      ]);
 
   //Text Colors
 
