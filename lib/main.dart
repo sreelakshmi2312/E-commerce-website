@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import '../utils/theme/theme.dart';
 
 void main() {
+
+  //ToDo : await splash screen 
+  
   runApp(const MyApp());
 }
 
