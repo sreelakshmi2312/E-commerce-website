@@ -19,7 +19,11 @@ class TDeviceutils{
     final viewInsets = MediaQuery.of(context).viewInsets;
     return viewInsets.bottom == 0;
   }
-
+  
+  static bool isPortraitOrientation(BuildContext context){
+    final viewInsets=MediaQuery.of(context).viewInsets;
+    return viewInsets.bottom!=0;
+  }
   
 
 
