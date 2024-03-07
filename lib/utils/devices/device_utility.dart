@@ -25,6 +25,12 @@ class TDeviceutils{
     return viewInsets.bottom!=0;
   }
   
+  static double getAppbarheight(){
+   return kToolbarHeight;
+  }
 
+  static double getBottomNavigationBarHeight(){
+    return kBottomNavigationBarHeight;
+  }
 
 }
