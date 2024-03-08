@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
 import '../../../../utils/constants/image_string.dart';
 import '../onboarding/widgets/onboardpageindicator.dart';
 import '../onboarding/widgets/onboardingarrow.dart';
-import '../../controllers.onboarding/onboarding_controller.dart';
+import '../../controllers/onboarding_controller.dart';
 
 
 
