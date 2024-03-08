@@ -15,4 +15,7 @@ class TApptexts{
   static const String hometitle="Good day for shopping";
   static const String homesubtitle="Jo Bob";
 
+ //login titles
+ static const String logintitle="Welcome back";
+ static const String loginsubtitle="Discover limitless choices and unmatched convenience";
 }
