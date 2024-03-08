@@ -18,28 +18,28 @@ class OnBoardingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Stack(
-        children:[ Padding(
-          padding:const EdgeInsets.all(TAppsizes.defaultspacing),
-          child: PageView(
-            controller: controller.pagecontroller,
-            onPageChanged: (value)=>controller.updateSelectedPage(value),
-            children:const [
-            OnBoarding(image:TImageString.onboardingimage1,title:TApptexts.onboardingtext1,subtitle: TApptexts.onboardingsubtext1),
-            OnBoarding(image:TImageString.onboardingimage2,title:TApptexts.onboardingtext2,subtitle: TApptexts.onboardingsubtext2),
-            OnBoarding(image:TImageString.onboardingimage3,title:TApptexts.onboardingtext3,subtitle: TApptexts.onboardingsubtext3),
-            ],
+        body:Stack(
+          children:[ Padding(
+            padding:const EdgeInsets.all(TAppsizes.defaultspacing),
+            child: PageView(
+              controller: controller.pagecontroller,
+              onPageChanged: (value)=>controller.updateSelectedPage(value),
+              children:const [
+              OnBoarding(image:TImageString.onboardingimage1,title:TApptexts.onboardingtext1,subtitle: TApptexts.onboardingsubtext1),
+              OnBoarding(image:TImageString.onboardingimage2,title:TApptexts.onboardingtext2,subtitle: TApptexts.onboardingsubtext2),
+              OnBoarding(image:TImageString.onboardingimage3,title:TApptexts.onboardingtext3,subtitle: TApptexts.onboardingsubtext3),
+              ],
+            ),
           ),
+          const Onboardingskip(),
+          //smooth page indicator
+          const OnBoardingPageIndicator(),
+          //circular button 
+          const OnBoardingArrow(),
+          ],
+      
         ),
-        const Onboardingskip(),
-        //smooth page indicator
-        const OnBoardingPageIndicator(),
-        //circular button 
-        const OnBoardingArrow(),
-        ],
-
-      ),
-    );
+      );
   }
 }
 

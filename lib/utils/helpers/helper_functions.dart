@@ -13,7 +13,9 @@ class THelperfunctions{
    return MediaQuery.of(Get.context!).size.height;
  }
 
- static bool isDarkMode(BuildContext context){
-  return Theme.of(context).brightness==Brightness.dark;
- }
+ static bool isDarkMode(BuildContext context) {
+  final Brightness brightness = Theme.of(context).brightness;
+  return brightness == Brightness.dark;
+}
+
 }
