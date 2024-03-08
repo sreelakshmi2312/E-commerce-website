@@ -1,23 +1,39 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class OnBoargingController extends GetxController{
-   static OnBoargingController get instance => Get.find();
-
+class OnBoardingController extends GetxController{
+   static OnBoardingController get instance => Get.find();
+   Rx<int> selectedpageindex=0.obs;
+   PageController pagecontroller=PageController();
+   
    //update selectedpageindex 
 
    void updateSelectedPage(int index){
-
+     selectedpageindex.value=index;
    }
    //Move to next page on scrolling 
 
-   void moveToNextPage(){}
+   void moveToNextPage(){
+    if(selectedpageindex.value==2){
+    }
+    else{
+      final index=selectedpageindex.value+1;
+      pagecontroller.jumpToPage(index);
+    }
+   }
 
-   // jumo to a page on selection of dot
+   // jump to a page on selection of dot
 
-   void moveToSelectedPage(int index){}
-
+   void moveToSelectedPage(int index){
+    selectedpageindex.value=index;
+    pagecontroller.jumpToPage(selectedpageindex.value);
+   }
+     
    //skip to last page 
 
-   void skipToFinalPage(){}
-   
+   void skipToFinalPage(){
+    selectedpageindex.value=2;
+    pagecontroller.jumpToPage(2);
+   }
+     
    }
