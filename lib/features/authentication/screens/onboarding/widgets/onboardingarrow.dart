@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:ecommerceapp/utils/helpers/helper_functions.dart';
 import 'package:iconsax/iconsax.dart';
@@ -17,9 +18,11 @@ class OnBoardingArrow extends StatelessWidget {
       bottom:TDeviceutils.getBottomNavigationBarHeight(),
       right:TAppsizes.defaultspacing,
       child:ElevatedButton(
-      onPressed:(){},
+      onPressed:(){
+        OnBoardingController.instance.moveToNextPage();
+      },
       style: ElevatedButton.styleFrom(shape: const CircleBorder(),backgroundColor:dark?TAppcolors.primary:TAppcolors.black),
-      child:const Icon(Iconsax.arrow_right))
+      child:const Icon(Iconsax.arrow_right_3))
       );
   }
 }
