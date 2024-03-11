@@ -9,6 +9,8 @@ class TImageString{
 
   static const String darkapplogo='assets/logos/t-store-splash-logo-white.png';
   static const String lightapplogo='assets/logos/t-store-splash-logo-black.png';
+  static const String googlelogo='assets/logos/google-icon.png';
+  static const String facebooklogo='assets/logos/facebook-icon.png';
 
   //brand icons
 

@@ -7,10 +7,10 @@ class TOutlinedButtonTheme{
   static  OutlinedButtonThemeData lightoutlinedbuttonTheme=OutlinedButtonThemeData(
     style:OutlinedButton.styleFrom(
        elevation: 0,
-       side: const BorderSide(color:Colors.blue),
+       side: const BorderSide(color:Colors.grey),
        foregroundColor: Colors.black,
        textStyle: const TextStyle(color:Colors.black,fontSize:16,fontWeight: FontWeight.w500),
-       shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+       shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
        padding: const EdgeInsets.symmetric(horizontal: 12 , vertical:12)
     )
   );
@@ -20,7 +20,7 @@ class TOutlinedButtonTheme{
        side: const BorderSide(color:Colors.blueAccent),
        foregroundColor: Colors.white,
        textStyle: const TextStyle(color:Colors.white,fontSize:16,fontWeight: FontWeight.w500),
-       shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+       shape:RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
        padding: const EdgeInsets.symmetric(horizontal: 12 , vertical:12)
     )
   );

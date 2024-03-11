@@ -13,8 +13,8 @@ class TAppsizes{
 
  static const double iconxs=12;
  static const double iconsm=16;
- static const double iconmd=24;
- static const double iconlg=32;
+ static const double iconmd=32;
+ static const double iconlg=40;
 
  //buttonsizes
 
