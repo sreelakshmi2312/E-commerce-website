@@ -4,9 +4,6 @@ import 'features/authentication/screens/onboarding/onboarding.dart';
 import 'package:get/get.dart';
 
 void main() {
-
-  //ToDo : await splash screen 
-  
   runApp(const MyApp());
 }
 
