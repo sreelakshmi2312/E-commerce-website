@@ -44,6 +44,19 @@ flutter:
     - assets/images/onboarding_images.dart/sammy-line-man-and-dog-delivering-packages-on-a-moped.gif
     - assets/images/onboarding_images.dart/sammy-line-woman-in-shopping-cart-placing-order-on-smartphone.gif
 
+flutter_native_splash: 
+  color: "#FFFFFF"
+  color_dark: '#272727'
+  image: 'assets/logos/t-store-splash-logo-black.png'
+  image_dark : 'assets/logos/t-store-splash-logo-white.png'
+
+  android_12:
+    color: "#FFFFFF"
+    color_dark: '#272727'
+    image: 'assets/logos/t-store-splash-logo-black.png'
+    image_dark : 'assets/logos/t-store-splash-logo-white.png'
+  
+  web: false
 
 fonts:
   - family: Poppins
