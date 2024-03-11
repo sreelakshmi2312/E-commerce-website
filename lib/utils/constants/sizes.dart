@@ -14,7 +14,7 @@ class TAppsizes{
  static const double iconxs=12;
  static const double iconsm=16;
  static const double iconmd=32;
- static const double iconlg=40;
+ static const double iconlg=50;
 
  //buttonsizes
 
@@ -55,6 +55,7 @@ class TAppsizes{
 
 static const double inputfieldradius=12;
 static const double inputfieldspacing=16;
+
 
 //card sizes
 

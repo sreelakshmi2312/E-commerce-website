@@ -4,6 +4,7 @@ import 'package:iconsax/iconsax.dart';
 import '../../../../../utils/constants/sizes.dart';
 
 
+
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});
 
@@ -43,22 +44,6 @@ class LoginForm extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: TAppsizes.spacebtwitems),
-                  SizedBox(
-                      width:150,
-                      child: ElevatedButton(
-                      onPressed: () {},
-                      child: const Text(TApptexts.signIn),
-                    ),
-                  ),
-                  const SizedBox(height: TAppsizes.spacebtwitems),
-                  SizedBox(
-                      width:150,
-                      child: OutlinedButton(
-                      onPressed: () {},
-                      child: const Text(TApptexts.createAccount),
-                    ),
-                  ),
-                  const SizedBox(height:TAppsizes.spacebtwitems),
                 ],
     );
   }

@@ -18,6 +18,7 @@ class TApptexts{
  //login titles
   static const String logintitle="Welcome back";
   static const String loginsubtitle="Discover limitless choices and unmatched convenience";
+  static const String signuptitle="Let's create your account";
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
   static const String email = "E-Mail";
@@ -32,6 +33,7 @@ class TApptexts{
   static const String orSignInWith = "or sign in with";
   static const String orSignUpWith = "or sign up with";
   static const String iAgreeTo = "I agree to";
+   static const String and = "and";
   static const String privacyPolicy = "Privacy Policy";
   static const String termsOfUse = "Terms of use";
   static const String verificationCode = "verificationCode";
