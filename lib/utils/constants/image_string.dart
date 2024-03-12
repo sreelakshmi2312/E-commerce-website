@@ -12,6 +12,12 @@ class TImageString{
   static const String googlelogo='assets/logos/google-icon.png';
   static const String facebooklogo='assets/logos/facebook-icon.png';
 
+
+  //animations
+  
+  static const String emailimage='assets/images/animations/sammy-line-man-receives-a-mail.png';
+  static const String emailsuccess='assets/images/animations/sammy-line-success.png';
+
   //brand icons
 
   static const String acericon='assets/icons/brands/acer_logo.png';
