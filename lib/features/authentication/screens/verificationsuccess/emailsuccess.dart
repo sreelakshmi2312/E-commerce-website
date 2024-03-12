@@ -13,7 +13,6 @@ class EmailSuccess extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child:Scaffold(
-        appBar: AppBar(automaticallyImplyLeading: true,),
         body: SingleChildScrollView(
           child:Padding(padding:TAppstyles.paddingstyle,
           child:Column(

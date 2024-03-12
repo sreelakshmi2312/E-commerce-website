@@ -18,6 +18,7 @@ class LoginScreen extends StatelessWidget {
     final darkmode = THelperfunctions.isDarkMode(context);
     return Material(
       child:Scaffold(
+      appBar: AppBar(automaticallyImplyLeading: true),
       body: SingleChildScrollView(
         child: Padding(
           padding: TAppstyles.paddingstyle,
