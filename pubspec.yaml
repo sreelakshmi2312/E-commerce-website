@@ -38,8 +38,10 @@ flutter:
   assets:
     - assets/logos/
     - assets/videos/
+    - assets/images/animations/sammy-line-man-receives-a-mail.png
     - assets/logos/t-store-splash-logo-white.png
     - assets/logos/t-store-splash-logo-black.png
+    - assets/images/animations/sammy-line-success.png
     - assets/images/onboarding_images.dart/sammy-line-sailor-on-mast-looking-through-telescope.gif
     - assets/images/onboarding_images.dart/sammy-line-man-and-dog-delivering-packages-on-a-moped.gif
     - assets/images/onboarding_images.dart/sammy-line-woman-in-shopping-cart-placing-order-on-smartphone.gif
