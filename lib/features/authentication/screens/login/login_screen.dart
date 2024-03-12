@@ -4,6 +4,7 @@ import 'package:ecommerceapp/common/styles/spacing_styles.dart';
 import 'package:ecommerceapp/features/authentication/screens/login/widgets/loginform.dart';
 import 'package:ecommerceapp/features/authentication/screens/login/widgets/loginheader.dart';
 import 'package:ecommerceapp/features/authentication/screens/signup/signupscreen.dart';
+import 'package:ecommerceapp/features/shop/screens/mainscreen.dart';
 import 'package:ecommerceapp/utils/constants/text_string.dart';
 import 'package:ecommerceapp/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +34,8 @@ class LoginScreen extends StatelessWidget {
 
               //Social Buttons
 
-              SocialButton(text1:TApptexts.signIn,text2:TApptexts.createAccount,pressed2: () => Get.to(const SignUpScreen()), pressed1: () {  },),
+              SocialButton(text1:TApptexts.signIn,text2:TApptexts.createAccount,pressed2: () => Get.to(const SignUpScreen()), pressed1: ()=> Get.to(const MainScreen()),),
+              
               //Login footer
 
               Dividerline(darkmode:darkmode,textline: TApptexts.orSignInWith,),

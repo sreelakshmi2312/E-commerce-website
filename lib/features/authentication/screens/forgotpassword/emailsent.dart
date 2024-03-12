@@ -34,11 +34,9 @@ class ResetEmail extends StatelessWidget {
               const SizedBox(height:TAppsizes.spacebtwsections),
               SingleButton(text1: TApptexts.done, pressed1: (){}),
               ],
+          ),
           )
-          )
-
-
-        )
+         )
       ),
     );
   }
