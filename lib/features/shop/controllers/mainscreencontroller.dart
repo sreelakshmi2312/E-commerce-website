@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../screens/homescreen.dart';
+import '../screens/homescreen/homescreen.dart';
 import '../screens/profilescreen.dart';
 import '../screens/storescreen.dart';
 import '../screens/wishlistscreen.dart';

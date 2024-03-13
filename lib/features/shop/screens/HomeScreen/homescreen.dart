@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import '../HomeScreen/widgets/curvedcontainer.dart';
-
-
+import '../HomeScreen/widgets/appbaricon.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,17 +9,13 @@ class HomeScreen extends StatelessWidget {
     return const Material(
       child:Scaffold(
          body:SingleChildScrollView(
-          child:Column(
-             children:[
-              TCurvedContainer(),
-             ]
-          )
-         )
-      )
-    );
+            child: Column(
+               children:[
+                AppBarTitle(),
+                    ],),
+          ),
+              ),
+            );
   }
 }
-
-
-
 
