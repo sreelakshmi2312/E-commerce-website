@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import '../HomeScreen/widgets/appbaricon.dart';
+import '../HomeScreen/widgets/appbartitle.dart';
+
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -12,7 +14,7 @@ class HomeScreen extends StatelessWidget {
             child: Column(
                children:[
                 AppBarTitle(),
-                    ],),
+             ],),
           ),
               ),
             );
