@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
          body:SingleChildScrollView(
             child: Column(
                children:[
-                AppBarTitle(),
+                AppBarTitle(titleText:'Popular Categories'),
              ],),
           ),
               ),
