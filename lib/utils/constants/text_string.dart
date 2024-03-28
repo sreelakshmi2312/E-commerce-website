@@ -61,4 +61,9 @@ class TApptexts{
 // Home
   static const String homeAppbarTitle = "Good day for shopping";
   static const String homeAppbarSubTitle = "Sreelakshmi";
+
+//Category Texts
+  
+  static const String shoeCategory="Shoe Category";
 }
+

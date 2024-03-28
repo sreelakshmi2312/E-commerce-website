@@ -43,6 +43,20 @@ class TImageString{
   static const String electronicsIcon = "assets/icons/categories/icons8-smartphone-64.png";
 
 
+  //Banners
+  static const String promoBanner1 = "assets/icons/products/promo-banner-1.png";
+  static const String promoBanner2 = "assets/icons/products/promo-banner-2.png";
+  static const String promoBanner3 = "assets/icons/products/promo-banner-3.png";
+  // static const String banner1 = "assets/icons/banner_1.jpg";
+  // static const String banner2 = "assets/icons/banner_2.jpg";
+  // static const String banner3 = "assets/icons/banner_3.jpg";
+  // static const String banner4 = "assets/icons/banner_4.jpg";
+  // static const String banner5 = "assets/icons/banner_5.jpg";
+  // static const String banner6 = "assets/icons/banner_6.jpg";
+  // static const String banner7 = "assets/icons/banner_7.jpg";
+  // static const String banner8 = "assets/icons/banner_8.jpg";
+
+
 
 
 }
