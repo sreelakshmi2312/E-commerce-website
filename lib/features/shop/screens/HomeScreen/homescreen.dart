@@ -1,9 +1,8 @@
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:ecommerceapp/utils/constants/image_string.dart';
 import 'package:flutter/material.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../HomeScreen/widgets/appbartitle.dart';
-import '../../screens/HomeScreen/widgets/itemslider.dart';
+import '../HomeScreen/widgets/carouselslider.dart';
+
 
 
 
@@ -13,27 +12,18 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return const Material(
       child:Scaffold(
          body:SingleChildScrollView(
             child: Column(
                children:[
-                const AppBarTitle(),
+                AppBarTitle(),
                 Padding(
-                  padding:const EdgeInsets.all(TAppsizes.defaultspacing),
-                  child:CarouselSlider(
-                    options:CarouselOptions(
-                    viewportFraction:0.8,
+                  padding:EdgeInsets.all(TAppsizes.defaultspacing),
+                  child:ItemSlider(),
                     ),
-                    
-                    items:const [
-                      Padding(padding:EdgeInsets.all(TAppsizes.defaultspacing) ,child:ItemsSlider(imageString: TImageString.promoBanner1)),
-                      Padding(padding:EdgeInsets.all(TAppsizes.defaultspacing),child:ItemsSlider(imageString: TImageString.promoBanner2)),
-                      Padding(padding:EdgeInsets.all(TAppsizes.defaultspacing),child: ItemsSlider(imageString: TImageString.promoBanner3)),
-                    ]),
-                    )
-                    ]
-                  )
+               ]
+            )
                 )
                     )
                   
