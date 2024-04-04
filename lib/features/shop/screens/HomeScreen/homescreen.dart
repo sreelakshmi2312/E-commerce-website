@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../HomeScreen/widgets/appbartitle.dart';
 import '../HomeScreen/widgets/carouselslider.dart';
+import '../../../../utils/constants/image_string.dart';
 
 
 
@@ -20,7 +21,7 @@ class HomeScreen extends StatelessWidget {
                 AppBarTitle(),
                 Padding(
                   padding:EdgeInsets.all(TAppsizes.defaultspacing),
-                  child:ItemSlider(),
+                  child:ItemSlider(banners:[TImageString.promoBanner1,TImageString.promoBanner2,TImageString.promoBanner3]),
                     ),
                ]
             )

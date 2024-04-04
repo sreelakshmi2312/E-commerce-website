@@ -10,7 +10,10 @@ import '../../../../../utils/constants/colors.dart';
 class ItemSlider extends StatelessWidget {
   const ItemSlider({
     super.key,
+    required this.banners,
   });
+
+  final List<String> banners;
 
   @override
   Widget build(BuildContext context) {
@@ -22,18 +25,14 @@ class ItemSlider extends StatelessWidget {
         onPageChanged: (index,_)=>controller.updatePageIndicator(index)
         ),
         
-        items:const [
-          Padding(padding:EdgeInsets.all(1) ,child:ItemsSlider(imageString: TImageString.promoBanner1)),
-          Padding(padding:EdgeInsets.all(1),child:ItemsSlider(imageString: TImageString.promoBanner2)),
-          Padding(padding:EdgeInsets.all(1),child: ItemsSlider(imageString: TImageString.promoBanner3)),
-        ]
+        items:banners.map((url) => ItemsSlider(imageString:url)).toList()
         ),
 const SizedBox(height:TAppsizes.spacebtwitems),
                     Obx(()=>
                       Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children:[
-                      for(int i=0;i<3;i++)
+                      for(int i=0;i<banners.length;i++)
                       Container(width:20,height: 4, decoration: BoxDecoration(borderRadius: BorderRadius.circular(2),color:controller.carousalCurrentIndex.value==i?TAppcolors.primary:Colors.grey),margin: const EdgeInsets.only(right:10))
                       ]
                                         ),
