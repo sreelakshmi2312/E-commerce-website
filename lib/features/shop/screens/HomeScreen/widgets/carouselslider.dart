@@ -2,7 +2,6 @@ import 'package:ecommerceapp/features/shop/controllers/homescreen_controllers.da
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import '../../../screens/HomeScreen/widgets/itemslider.dart';
-import 'package:ecommerceapp/utils/constants/image_string.dart';
 import 'package:get/get.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/colors.dart';

@@ -1,3 +1,4 @@
+import 'package:ecommerceapp/features/shop/screens/HomeScreen/widgets/productcard.dart';
 import 'package:flutter/material.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../HomeScreen/widgets/appbartitle.dart';
@@ -23,6 +24,7 @@ class HomeScreen extends StatelessWidget {
                   padding:EdgeInsets.all(TAppsizes.defaultspacing),
                   child:ItemSlider(banners:[TImageString.promoBanner1,TImageString.promoBanner2,TImageString.promoBanner3]),
                     ),
+                  TProductCard(),
                ]
             )
                 )
