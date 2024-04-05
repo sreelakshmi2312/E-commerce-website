@@ -24,7 +24,7 @@ class HomeScreen extends StatelessWidget {
                   padding:EdgeInsets.all(TAppsizes.defaultspacing),
                   child:ItemSlider(banners:[TImageString.promoBanner1,TImageString.promoBanner2,TImageString.promoBanner3]),
                     ),
-                  TProductCard(),
+                  TProductCard(imageurl:TImageString.product1,titletext: "Nike Air Sports Shoe",),
                ]
             )
                 )

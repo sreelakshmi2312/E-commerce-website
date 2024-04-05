@@ -56,7 +56,9 @@ class TImageString{
   // static const String banner7 = "assets/icons/banner_7.jpg";
   // static const String banner8 = "assets/icons/banner_8.jpg";
 
+ //Products
 
+ static const String product1="assets/icons/products/product-1.png";
 
 
 }
