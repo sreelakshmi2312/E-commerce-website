@@ -21,6 +21,7 @@ dependencies:
   url_launcher: ^6.2.5
   flutter_native_splash: ^2.3.13
   smooth_page_indicator: ^1.1.0
+  carousel_slider: ^4.2.1
 
   # State management
   get: ^4.6.6
@@ -45,6 +46,9 @@ flutter:
     - assets/images/onboarding_images.dart/sammy-line-sailor-on-mast-looking-through-telescope.gif
     - assets/images/onboarding_images.dart/sammy-line-man-and-dog-delivering-packages-on-a-moped.gif
     - assets/images/onboarding_images.dart/sammy-line-woman-in-shopping-cart-placing-order-on-smartphone.gif
+    - assets/icons/categories/
+    - assets/icons/products/
+
     
 
 flutter_native_splash: 
