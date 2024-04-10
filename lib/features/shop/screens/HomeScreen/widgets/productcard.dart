@@ -21,24 +21,25 @@ class _TProductCardState extends State<TProductCard> {
     bool tapped=false;
     return Container(
       width:180,
-      padding:const EdgeInsets.all(1),
       decoration: BoxDecoration(
         boxShadow: [TShadowStyle.verticalproductshadow],
         borderRadius: BorderRadius.circular(TAppsizes.productimageradius),
         color:THelperfunctions.isDarkMode(context)?TAppcolors.greydarker:TAppcolors.textwhite,
       ),
-      child:Column(children: [
+      child:Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
         Container(
-          margin: const EdgeInsets.all(TAppsizes.sm),
+          decoration: BoxDecoration(borderRadius: BorderRadius.circular(TAppsizes.sm),  
+          color: THelperfunctions.isDarkMode(context)?TAppcolors.backgrounddark:TAppcolors.backgroundlight,),
           height:180,
-          color: THelperfunctions.isDarkMode(context)?TAppcolors.backgrounddark:TAppcolors.backgroundlight,
           padding:const EdgeInsets.all(TAppsizes.sm),
           child:Stack(
             children:[
-              Image(image:AssetImage(widget.imageurl),),
+              Center(child: Image(image:AssetImage(widget.imageurl),)),
               Positioned(
-                // top:0,
-                // left:0,
+                top:0,
+                left:0,
                 child: Container(
                   width:50,
                   height:TAppsizes.lg,
@@ -46,7 +47,7 @@ class _TProductCardState extends State<TProductCard> {
                     color:TAppcolors.secondary,
                     borderRadius: BorderRadius.circular(TAppsizes.sm),
                     ),
-                    child:const Text('-25%',style:TextStyle(fontWeight: FontWeight.bold,color: Colors.black,),textAlign:TextAlign.center,),
+                    child:const Text('25%',style:TextStyle(fontWeight: FontWeight.bold,color: Colors.black,),textAlign:TextAlign.center,),
                 ),
               ),
               Positioned(
@@ -59,8 +60,17 @@ class _TProductCardState extends State<TProductCard> {
                      });
                   
                   },
-                  child:const Icon(Iconsax.heart5,
-                  color:Colors.red),
+                  child:Container(
+                    height:35,
+                    width:35,
+                    decoration: const BoxDecoration(
+                      shape:BoxShape.circle,
+                      color:TAppcolors.textwhite),
+                    child: const Center(
+                      child: Icon(Iconsax.heart5,
+                      color:Colors.red),
+                    ),
+                  ),
                 )
               )
             ]
@@ -68,8 +78,19 @@ class _TProductCardState extends State<TProductCard> {
           
 
         ),
-        const SizedBox(height:TAppsizes.md),
-        Text(widget.titletext,style:Theme.of(context).textTheme.labelLarge)
+        const SizedBox(height:TAppsizes.sm),
+        Text(widget.titletext,style:Theme.of(context).textTheme.labelLarge),
+        const SizedBox(height:TAppsizes.spacebtwitems/2),
+        Row(
+          children:[
+            Padding(
+              padding:const EdgeInsets.only(left:TAppsizes.sm),
+              child: Text('Nike',overflow:TextOverflow.ellipsis,maxLines: 1,style:Theme.of(context).textTheme.labelMedium)),
+            const SizedBox(width:TAppsizes.xs),
+            const Icon(Iconsax.verify5,color:TAppcolors.primary,size:TAppsizes.iconxs),
+          ]
+        )
+
        
     
       ],
