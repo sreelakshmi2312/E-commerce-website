@@ -89,13 +89,37 @@ class _TProductCardState extends State<TProductCard> {
             const SizedBox(width:TAppsizes.xs),
             const Icon(Iconsax.verify5,color:TAppcolors.primary,size:TAppsizes.iconxs),
           ]
-        )
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children:[
+            Padding(padding:const EdgeInsets.only(left:TAppsizes.sm),
+            child:Text('\$35',
+            overflow: TextOverflow.ellipsis,
+            maxLines: 1,
+            style: Theme.of(context).textTheme.headlineMedium)),
 
-       
-    
-      ],
+            const SizedBox(width:TAppsizes.sm),
+
+            Container(
+              decoration:const BoxDecoration(
+                color: TAppcolors.backgrounddark,
+                borderRadius: BorderRadius.only(
+                   topLeft: Radius.circular(TAppsizes.cardRadiusMd),
+                   bottomRight: Radius.circular(TAppsizes.cardRadiusMd),
+                  
+                ),
+
+              ),
+              child:const Icon(Iconsax.add,color: TAppcolors.textwhite,),
+            )
+          ]
+            )
+        
+          ]
+        ),
+
            
-           ),
-        );
+           );
 }
 }

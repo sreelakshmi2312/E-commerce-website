@@ -40,6 +40,12 @@ class TAppsizes{
  static const double bordermedium=8;
  static const double borderlarge=12;
  
+   // Card sizes
+  static const double cardRadiusLg = 16.0;
+  static const double cardRadiusMd = 12.0;
+  static const double cardRadiusSm = 10.0;
+  static const double cardRadiusXs = 6.0;
+  static const double cardElevation = 2.0;
 
  //divider height
 
